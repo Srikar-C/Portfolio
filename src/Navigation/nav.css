@@ -1,0 +1,135 @@
+.nav-bar {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      180deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    width: 100%;
+    /* background: rgb(0, 90, 167);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 90, 167, 1) 33%,
+      rgba(61, 129, 181, 1) 59%,
+      rgba(248, 250, 224, 1) 97%
+    ); */
+    color: white;
+  }
+  .nav-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    color: white;
+    height: 20vh;
+    margin-top: 10px;
+    position: sticky;
+  }
+  .nav-top h2 {
+    font-size: 25px;
+  }
+  .nav-left {
+    width: 20%;
+  }
+  .nav-left a {
+    text-decoration: none;
+    color: none;
+  }
+  .nav-left h2 {
+    color: white;
+  }
+  .nav-right {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+  }
+  .nav-btm {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 55vh;
+  }
+  .nav-btm a {
+    text-decoration: none;
+    width: 100%;
+  }
+  .sub-btm * {
+    font-size: 50px;
+    color: white;
+    margin: 0px 20px;
+  }
+  .nav-right a {
+    text-decoration: none;
+    color: white;
+  }
+  .insta:hover {
+    color: purple;
+  }
+  .git:hover {
+    color: green;
+  }
+  .link:hover {
+    color: blue;
+  }
+  .over-view {
+    --c: white;
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 0px 42%;
+    text-decoration: none;
+  }
+  .over-view span:nth-child(1) {
+    --n: 1;
+  }
+  
+  .over-view span:nth-child(2) {
+    --n: 2;
+  }
+  
+  .over-view span:nth-child(3) {
+    --n: 3;
+  }
+  
+  .over-view span:nth-child(4) {
+    --n: 4;
+  }
+  
+  .over-view:hover {
+    color: black;
+  }
+  .over-view:hover span {
+    transform: translateY(0) scale(2);
+  }
+  .over-view span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+  }

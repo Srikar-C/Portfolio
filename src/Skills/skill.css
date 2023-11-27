@@ -1,0 +1,81 @@
+.skills {
+    /* background: rgb(240, 232, 232);
+    background: linear-gradient(
+      351deg,
+      rgba(240, 232, 232, 1) 18%,
+      rgba(233, 223, 230, 1) 46%,
+      rgba(214, 221, 231, 1) 80%
+    ); */
+    background: rgb(105, 201, 194);
+    background: linear-gradient(
+      180deg,
+      rgba(105, 169, 206) 20%,
+      rgba(91, 91, 176, 1) 60%,
+      rgb(149, 149, 180) 86%
+    );
+    width: 100%;
+  }
+  .skills img {
+    height: 100px;
+    width: fit-content;
+    /* border: 1px solid black; */
+  }
+  hr {
+    font-weight: 1000;
+    border: 1px solid black;
+    margin: 20px auto;
+    width: 95%;
+  }
+  .main-head {
+    font-size: 30px;
+    width: fit-content;
+    font-weight: 1000;
+    display: flex;
+    flex-direction: column;
+    margin: 0pc auto;
+    border-bottom: 2px solid black;
+    color: black;
+  }
+  .under {
+    border: 1px solid white;
+    margin: 5% auto;
+    width: 80%;
+    text-align: start;
+    background-color: rgb(230, 220, 220);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .program-list,
+  .front-list,
+  .data-list,
+  .version-list {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4%;
+  }
+  .program-list *,
+  .front-list *,
+  .data-list *,
+  .version-list * {
+    margin: 0px 20px;
+  }
+  .program h1,
+  .front h1,
+  .data h1,
+  .version h1 {
+    font-size: 30px;
+    margin-left: 30px;
+  }
+  .skills li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .skills li p {
+    margin-top: 10px;
+  }

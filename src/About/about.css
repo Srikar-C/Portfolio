@@ -1,0 +1,95 @@
+.about {
+    background: rgb(0, 212, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 212, 255, 1) 0%,
+      rgb(68, 68, 204) 51%,
+      rgb(105, 169, 206) 86%
+    );
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    width: 100%;
+  }
+  .intro {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .intro2 {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    align-items: center;
+  }
+  .intro2 h3 {
+    width: 60%;
+    text-align: left;
+  }
+  .intro h1 {
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    width: fit-content;
+    margin: 0px auto;
+    font-weight: 1000;
+  }
+  
+  .abt-btm .over-view {
+    --c: blue;
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 0px 42%;
+    text-decoration: none;
+  }
+  .abt-btm .over-view span:nth-child(1) {
+    --n: 1;
+  }
+  
+  .abt-btm .over-view span:nth-child(2) {
+    --n: 2;
+  }
+  
+  .abt-btm .over-view span:nth-child(3) {
+    --n: 3;
+  }
+  
+  .abt-btm .over-view span:nth-child(4) {
+    --n: 4;
+  }
+  
+  .abt-btm .over-view:hover {
+    color: black;
+  }
+  .abt-btm .over-view:hover span {
+    transform: translateY(0) scale(2);
+  }
+  .abt-btm .over-view span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+  }

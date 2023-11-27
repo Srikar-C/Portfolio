@@ -1,0 +1,116 @@
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  height: 200vh;
+  margin-bottom: 10vh;
+}
+.links {
+  justify-content: space-evenly;
+}
+.proj {
+  display: flex;
+  flex-direction: column;
+  background: rgb(92, 92, 119);
+  background: linear-gradient(
+    180deg,
+    rgba(149, 149, 180) 16%,
+    rgba(47, 47, 162, 1) 54%,
+    rgba(104, 104, 232, 1) 85%
+  );
+  width: 100%;
+}
+.proj h1 {
+  font-size: 30px;
+  border-bottom: 2px solid white;
+  width: fit-content;
+  margin: 0px auto;
+  font-weight: 1000;
+  margin-bottom: 20px;
+  color: white;
+}
+.project-list {
+  width: 400px;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+.project-list img {
+  width: 400px;
+  height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  /* object-fit: contain; */
+}
+.project-list h3 {
+  font-size: 30px;
+  font-weight: 1000;
+}
+.project-list p {
+  height: 10vh;
+  width: 90%;
+}
+.Goto {
+  --c: rgb(190, 190, 214);
+  color: var(--c);
+  font-size: 16px;
+  border: 0.3em solid var(--c);
+  border-radius: 0.5em;
+  width: 12em;
+  height: 3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 3em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.Goto span:nth-child(1) {
+  --n: 1;
+}
+
+.Goto span:nth-child(2) {
+  --n: 2;
+}
+
+.Goto span:nth-child(3) {
+  --n: 3;
+}
+
+.Goto span:nth-child(4) {
+  --n: 4;
+}
+
+.Goto:hover {
+  color: black;
+}
+.Goto:hover span {
+  transform: translateY(0) scale(2);
+}
+.Goto span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
