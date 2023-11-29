@@ -11,10 +11,16 @@ import TimelineOppositeContent, {
 } from "@mui/lab/TimelineOppositeContent";
 import "./edu.css";
 import { MdWorkHistory } from "react-icons/md";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 export default function Education() {
+  useEffect(()=>{
+    AOS.init({duration:1000});
+  },[]);
   return (
     <div className="over" id="about">
-      <div className="education">
+      <div className="education"  data-aos="fade-right">
         <div style={{ display: "flex", marginTop: "40px" }}>
           <RiGraduationCapFill className="logos" />
           <h2>Education</h2>
@@ -77,7 +83,7 @@ export default function Education() {
           </TimelineItem>
         </Timeline>
       </div>
-      <div className="experience">
+      <div className="experience"  data-aos="fade-left">
         <div style={{ display: "flex", marginTop: "40px" }}>
           <MdWorkHistory style={{ color: "blue" }} className="logos" />
           <h2>Experience</h2>

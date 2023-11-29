@@ -4,11 +4,17 @@ import otp from "./otp.png";
 import todo from "./todo.png";
 import port from "./port.png";
 import "./pro.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 // import MCard from "./MCard";
 export default function Project() {
+  useEffect(()=>{
+    AOS.init({duration:1000});
+  },[]);
   function Card(props) {
     return (
-      <div className="project-list">
+      <div className="project-list" data-aos="fade-right">
         <img src={props.src} />
         <h3>{props.name}</h3>
         <p>{props.content}</p>

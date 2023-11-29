@@ -1,9 +1,15 @@
 import "./skill.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 export default function Skills() {
+  useEffect(()=>{
+    AOS.init({duration:1000});
+  },[]);
   return (
     <div className="skills" id="skill">
       <h1 className="main-head">Skills</h1>
-      <div className="under">
+      <div className="under" data-aos="fade-right">
         <div className="program">
           <h1>Programming</h1>
           <hr />
@@ -14,6 +20,8 @@ export default function Skills() {
             </li>
           </div>
         </div>
+      </div>
+      <div className="under" data-aos="fade-right">
         <div className="front">
           <h1>Frontend Technologies</h1>
           <hr />
@@ -40,6 +48,8 @@ export default function Skills() {
             </li>
           </div>
         </div>
+      </div>
+      <div className="under" data-aos="fade-right">
         <div className="data">
           <h1>Databases</h1>
           <hr />
@@ -50,6 +60,8 @@ export default function Skills() {
             </li>
           </div>
         </div>
+      </div>
+      <div className="under" data-aos="fade-right">
         <div className="version">
           <h1>Version Control</h1>
           <hr />
