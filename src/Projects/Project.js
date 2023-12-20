@@ -18,8 +18,7 @@ export default function Project() {
         <img src={props.src} />
         <h3>{props.name}</h3>
         <p>{props.content}</p>
-        {/* <div className="links"> */}
-        <a href={props.git} className="nextPage" download>
+        <a href={props.git} className="nextPage" target="_blank">
           <h2 className="Goto">
             View on Github
             <span></span>
@@ -28,7 +27,7 @@ export default function Project() {
             <span></span>
           </h2>
         </a>
-        <a href={props.link} className="nextPage" download>
+        <a href={props.link} className="nextPage" target="_blank">
           <h2 className="Goto">
             View Demo
             <span></span>
@@ -37,17 +36,13 @@ export default function Project() {
             <span></span>
           </h2>
         </a>
-        {/* </div> */}
-        {/* <a href={props.link} className="nextPage">
-          View Details
-        </a> */}
       </div>
     );
   }
   return (
     <div className="proj" id="project">
       <h1>Projects</h1>
-      <div id="projects">
+      <div id="projects">      
         <Card
           name="Health Connect"
           src={health}
@@ -60,7 +55,7 @@ export default function Project() {
           src={port}
           content="Portfolio"
           git="https://github.com/Srikar-C/PortFolio"
-          link="https://k3z92h.csb.app/"
+          link="https://miniresume.web.app/"
         />
         <Card
           name="To Do List"
