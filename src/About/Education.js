@@ -38,7 +38,7 @@ export default function Education() {
               color="white"
               style={{ marginRight: "20px" }}
             >
-              2020 - 2024
+              2020 - Present
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot />
@@ -101,7 +101,7 @@ export default function Education() {
               color="white"
               style={{ marginRight: "20px" }}
             >
-              April 2023 - June 2023
+              Apr 2023 - Jun 2023
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot />
@@ -110,6 +110,22 @@ export default function Education() {
             <TimelineContent style={{ marginTop: "-20px" }}>
               <h3>FrontEnd Web Developer</h3>
               <p>BOLT IOT</p>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineOppositeContent
+              color="white"
+              style={{ marginRight: "20px" }}
+            >
+              Dec 2023 - Present
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent style={{ marginTop: "-20px" }}>
+              <h3>Intern</h3>
+              <p>Crimson Innovative Technologies</p>
             </TimelineContent>
           </TimelineItem>
         </Timeline>
