@@ -18,6 +18,13 @@ export default function Education() {
   useEffect(()=>{
     AOS.init({duration:1000});
   },[]);
+
+  const style = {
+    '@media screen and (min-width:320px) and (max-width:480px)':{
+      fontSize: '15px',
+    }
+  }
+
   return (
     <div className="over" id="about">
       <div className="education"  data-aos="fade-right">
@@ -31,12 +38,13 @@ export default function Education() {
               flex: 0.2
             }
           }}
-          style={{ marginTop: "30px" }}
+          className="timeline"
         >
           <TimelineItem>
             <TimelineOppositeContent
               color="white"
-              style={{ marginRight: "20px" }}
+              className="left-list"
+              style={style}
             >
               2020 - Present
             </TimelineOppositeContent>
@@ -44,7 +52,7 @@ export default function Education() {
               <TimelineDot />
               <TimelineConnector />
             </TimelineSeparator>
-            <TimelineContent style={{ marginTop: "-20px" }}>
+            <TimelineContent style={{ marginTop: "-20px" }} className="right-list">
               <h3>B. Tech</h3>
               <p>G Pulla Reddy Engineering College</p>
             </TimelineContent>
@@ -52,7 +60,8 @@ export default function Education() {
           <TimelineItem>
             <TimelineOppositeContent
               color="white"
-              style={{ marginRight: "20px" }}
+              className="left-list"
+              style={style}
             >
               2018 - 2020
             </TimelineOppositeContent>
@@ -60,7 +69,7 @@ export default function Education() {
               <TimelineDot />
               <TimelineConnector />
             </TimelineSeparator>
-            <TimelineContent style={{ marginTop: "-20px" }}>
+            <TimelineContent style={{ marginTop: "-20px" }} className="right-list">
               <h3>Intermediate</h3>
               <p>Sri Chaitanya Junior College</p>
             </TimelineContent>
@@ -68,7 +77,8 @@ export default function Education() {
           <TimelineItem>
             <TimelineOppositeContent
               color="white"
-              style={{ marginRight: "20px" }}
+              className="left-list"
+              style={style}
             >
               2017 - 2018
             </TimelineOppositeContent>
@@ -76,13 +86,14 @@ export default function Education() {
               <TimelineDot />
               <TimelineConnector />
             </TimelineSeparator>
-            <TimelineContent style={{ marginTop: "-20px" }}>
+            <TimelineContent style={{ marginTop: "-20px" }} className="right-list">
               <h3>10th</h3>
               <p>Cattamanchi Ramalinga Reddy High School</p>
             </TimelineContent>
           </TimelineItem>
         </Timeline>
       </div>
+
       <div className="experience"  data-aos="fade-left">
         <div style={{ display: "flex", marginTop: "40px" }}>
           <MdWorkHistory style={{ color: "blue" }} className="logos" />
@@ -94,12 +105,14 @@ export default function Education() {
               flex: 0.2
             }
           }}
-          style={{ marginTop: "30px" }}
+          className="timeline"
         >
           <TimelineItem>
             <TimelineOppositeContent
               color="white"
-              style={{ marginRight: "20px" }}
+              className="left-list"
+              style={style}
+              
             >
               Apr 2023 - Jun 2023
             </TimelineOppositeContent>
@@ -107,7 +120,7 @@ export default function Education() {
               <TimelineDot />
               <TimelineConnector />
             </TimelineSeparator>
-            <TimelineContent style={{ marginTop: "-20px" }}>
+            <TimelineContent style={{ marginTop: "-20px" }} className="right-list">
               <h3>FrontEnd Web Developer</h3>
               <p>BOLT IOT</p>
             </TimelineContent>
@@ -115,7 +128,8 @@ export default function Education() {
           <TimelineItem>
             <TimelineOppositeContent
               color="white"
-              style={{ marginRight: "20px" }}
+              className="left-list"
+              style={style}
             >
               Dec 2023 - Present
             </TimelineOppositeContent>
@@ -123,7 +137,7 @@ export default function Education() {
               <TimelineDot />
               <TimelineConnector />
             </TimelineSeparator>
-            <TimelineContent style={{ marginTop: "-20px" }}>
+            <TimelineContent style={{ marginTop: "-20px" }} className="right-list">
               <h3>Intern</h3>
               <p>Crimson Innovative Technologies</p>
             </TimelineContent>

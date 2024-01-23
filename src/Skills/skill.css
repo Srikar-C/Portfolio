@@ -1,11 +1,4 @@
 .skills {
-    /* background: rgb(240, 232, 232);
-    background: linear-gradient(
-      351deg,
-      rgba(240, 232, 232, 1) 18%,
-      rgba(233, 223, 230, 1) 46%,
-      rgba(214, 221, 231, 1) 80%
-    ); */
     background: rgb(105, 201, 194);
     background: linear-gradient(
       180deg,
@@ -78,4 +71,28 @@
   }
   .skills li p {
     margin-top: 10px;
+  }
+
+
+
+  @media screen and (min-width:320px) and (max-width:480px) {
+    .skills{
+      height: fit-content;
+      position: relative;
+      padding: 5% 0px;
+    }
+    .program-list,
+    .front-list,
+    .data-list,
+    .version-list {
+      display: flex;
+      flex-wrap: wrap;
+      flex-basis: 100%;
+    }
+    .program-list *,
+    .front-list *,
+    .data-list *,
+    .version-list * {
+    margin: 5px 10px;
+  }
   }

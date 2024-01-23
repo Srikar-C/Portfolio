@@ -3,7 +3,7 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    position: relative;
   }
   .logos {
     width: 70px;
@@ -27,4 +27,33 @@
   .experience h2 {
     font-size: 30px;
     color: whitesmoke;
+  }
+
+  .right-list{
+    margin-top: -20px;
+  }
+
+  .left-list{
+    margin-right: 20px;
+  }
+
+  @media screen and (min-width:320px) and (max-width:480px) {
+    
+    #about{
+      display: flex;
+      flex-direction: column !important;
+      position: relative;
+    }
+
+    .education,.experience{
+      height: max-content;
+      position: relative;
+    }
+    .left-list{
+      font-size: 15px !important;
+    }
+    .right-list h3,.right-list p{
+      font-size: 15px !important;
+    }
+
   }

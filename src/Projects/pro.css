@@ -114,3 +114,14 @@
   transition-delay: calc((var(--n) - 1) * 0.1s);
   z-index: -1;
 }
+
+
+
+@media screen and (min-width:320px) and (max-width:480px) {
+  #projects{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}

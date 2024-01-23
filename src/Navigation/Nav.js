@@ -5,12 +5,13 @@ import { VscGithubInverted } from "react-icons/vsc";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import Drop from "./Drop";
 export default function Nav() {
   useEffect(()=>{
     AOS.init({duration:1000});
   },[]);
   return (
-    <nav className="nav-bar" id="">
+    <nav className="nav-bar">
       <nav className="nav-top">
         <nav className="nav-left">
           <a href="">
@@ -34,9 +35,10 @@ export default function Nav() {
             <h2>Contact</h2>
           </a>
         </nav>
+        <Drop className="drop"/>
       </nav>
       <nav className="nav-btm" data-aos="fade-right">
-        <h1 style={{ fontSize: "70px" }}>Hi! I am Challa Srikar</h1>
+        <h1 className="heading">Hi! I am Challa Srikar</h1>
         <a href="#home">
           <h2 className="over-view">
             View Profile

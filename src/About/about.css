@@ -93,3 +93,36 @@
     transition-delay: calc((var(--n) - 1) * 0.1s);
     z-index: -1;
   }
+
+
+
+  @media screen and (min-width:320px) and (max-width:480px) {
+    .intro2{
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin: 0px auto;
+    }
+    .intro2 h3{
+      width: 100%;
+      margin: 5% 0px;
+    }
+    .abt-btm{
+      margin-left: -50%;
+    }
+    .intro{
+      margin: 1% auto;
+      width: 100%;
+      position: relative;
+      height: fit-content;
+    }
+    .about,#home{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    *{
+      position: relative;
+    }
+  }
