@@ -19,16 +19,11 @@ export default function Education() {
     AOS.init({duration:1000});
   },[]);
 
-  const style = {
-    '@media screen and (min-width:320px) and (max-width:480px)':{
-      fontSize: '15px',
-    }
-  }
 
   return (
     <div className="over" id="about">
       <div className="education"  data-aos="fade-right">
-        <div style={{ display: "flex", marginTop: "40px" }}>
+        <div style={{ display: "flex", marginTop: "40px",alignItems:"center" }}>
           <RiGraduationCapFill className="logos" />
           <h2>Education</h2>
         </div>
@@ -44,7 +39,6 @@ export default function Education() {
             <TimelineOppositeContent
               color="white"
               className="left-list"
-              style={style}
             >
               2020 - Present
             </TimelineOppositeContent>
@@ -61,7 +55,6 @@ export default function Education() {
             <TimelineOppositeContent
               color="white"
               className="left-list"
-              style={style}
             >
               2018 - 2020
             </TimelineOppositeContent>
@@ -78,7 +71,6 @@ export default function Education() {
             <TimelineOppositeContent
               color="white"
               className="left-list"
-              style={style}
             >
               2017 - 2018
             </TimelineOppositeContent>
@@ -95,7 +87,7 @@ export default function Education() {
       </div>
 
       <div className="experience"  data-aos="fade-left">
-        <div style={{ display: "flex", marginTop: "40px" }}>
+        <div style={{ display: "flex", marginTop: "40px",alignItems:"center" }}>
           <MdWorkHistory style={{ color: "blue" }} className="logos" />
           <h2>Experience</h2>
         </div>
@@ -111,7 +103,6 @@ export default function Education() {
             <TimelineOppositeContent
               color="white"
               className="left-list"
-              style={style}
               
             >
               Apr 2023 - Jun 2023
@@ -129,7 +120,6 @@ export default function Education() {
             <TimelineOppositeContent
               color="white"
               className="left-list"
-              style={style}
             >
               Dec 2023 - Present
             </TimelineOppositeContent>

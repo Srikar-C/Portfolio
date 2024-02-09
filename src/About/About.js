@@ -14,7 +14,7 @@ export default function About() {
           </h3>
           <nav className="abt-btm">
             <a href={resume} download>
-              <h2 className="over-view">
+              <h2 className="over">
                 Download CV
                 <span></span>
                 <span></span>

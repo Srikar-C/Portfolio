@@ -55,3 +55,27 @@
   .phone::before {
     content: "|";
   }
+
+  @media screen and (min-width:320px) and (max-width:480px){
+    .top{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-basis: 33.33%;
+    }
+    .contact{
+      align-items: center;
+    }
+    .det{
+      display: flex;
+      flex-direction: column;
+    }
+    .phone{
+      border: none;
+      border-left: none;
+    }
+    .phone::before{
+      content: "";
+    }
+  }
